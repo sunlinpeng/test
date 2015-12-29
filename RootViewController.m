@@ -19,7 +19,7 @@
     // Do any additional setup after loading the view from its nib.
     KeychainItemWrapper *wrapper = [[KeychainItemWrapper alloc]initWithIdentifier:@"xxxxxx" accessGroup:nil];
     self.text1.text = [wrapper objectForKey:(id)kSecAttrAccount];
-//    self.text2.text = [wrapper objectForKey:(id)kSecValueData];
+    self.text2.text = [wrapper objectForKey:(id)kSecValueData];
 }
 
 - (void)didReceiveMemoryWarning {
